@@ -1,0 +1,12 @@
+https://www.thecolorapi.com/id?hex=bb3897
+###
+https://www.csscolorsapi.com/api/colors
+###
+POST http://127.0.0.1:3000/ HTTP/1.1
+content-type: application/json
+
+{
+    "colors": ["#100000", "#ffffff", "#123456", "#eeeeee"]
+}
+###
+GET http://127.0.0.1:3000/ HTTP/1.1
