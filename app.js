@@ -4,10 +4,9 @@ import Axios from "axios";
 import neo4j from "neo4j-driver";
 import cors from "@fastify/cors";
 import { v4 as uuidv4 } from "uuid";
-
 const driver = neo4j.driver(
-  process.env.NEO4J_URI,
-  neo4j.auth.basic(process.env.NEO4J_USERNAME, process.env.NEO4J_PASSWORD)
+  "neo4j+s://d3fa20a5.databases.neo4j.io",
+  neo4j.auth.basic("neo4j", "QlZ_UhgfuxU2YJ1HrxhXsh7iAmDaqc1TfmQ-pnGi2Sg")
 );
 const fastify = Fastify({
   logger: true,
